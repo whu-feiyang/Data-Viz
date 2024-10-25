@@ -169,19 +169,18 @@ const beforeMap = new mapboxgl.Map({
     zoom: 4
 });
 
-// Add zoom and rotation controls to the before map
+
 beforeMap.addControl(new mapboxgl.NavigationControl());
 
-// Add scale control to the before map
+
 beforeMap.addControl(new mapboxgl.ScaleControl({
     maxWidth: 80,
     unit: 'imperial'
 }));
 
-// Add fullscreen control to the before map
+
 beforeMap.addControl(new mapboxgl.FullscreenControl());
 
-// Add geolocate control to the before map
 beforeMap.addControl(new mapboxgl.GeolocateControl({
     positionOptions: {
         enableHighAccuracy: true
@@ -198,19 +197,19 @@ const afterMap = new mapboxgl.Map({
     zoom: 4
 });
 
-// Add zoom and rotation controls to the after map
+
 afterMap.addControl(new mapboxgl.NavigationControl());
 
-// Add scale control to the after map
+
 afterMap.addControl(new mapboxgl.ScaleControl({
     maxWidth: 80,
     unit: 'imperial'
 }));
 
-// Add fullscreen control to the after map
+
 afterMap.addControl(new mapboxgl.FullscreenControl());
 
-// Add geolocate control to the after map
+
 afterMap.addControl(new mapboxgl.GeolocateControl({
     positionOptions: {
         enableHighAccuracy: true
@@ -219,7 +218,6 @@ afterMap.addControl(new mapboxgl.GeolocateControl({
 }));
 
 
-// A selector or reference to HTML element
 
 const container = '#comparison-container';
 
